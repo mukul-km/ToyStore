@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Toy Store</title>
 
+    <link rel="icon" type="image/x-icon" href="img/5bd83035e7345f2f22c0bece_favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
@@ -30,7 +31,7 @@
             <label for="" class="nav-main-logo">ToyStore</label>
 
             <div class="nav-menu">
-                <ul class="nav-menu-list">
+                <ul class="nav-menu-list sm-screen">
                     <li id="list-items">Catalog</li>
                     <li id="list-items">Delivery</li>
                     <li id="list-items">About</li>
@@ -42,18 +43,24 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                     <div id="item-count">0</div>
                 </a>
+            </div>
+            <div class="menu-grid lg-screen">
+                <div id="top"></div>
+                <div id="middle"></div>
+                <div id="bottom"></div>
             </div>  
         </div>
     </header>
 
     <section class="hero-section">
-        <div class="hero-heading"> 
+        <div class="hero-intro"> 
             <h3>Say Hello to ToyStore!</h3>
             <h1>Quality Toys For Fun & Learning</h1>
             <button id="catalog">Open Catalog</button>
         </div>
         
     </section>
+
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
