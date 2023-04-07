@@ -736,9 +736,14 @@ footer{
 }
 
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:479px){
     .sm-screen{
         display: none;
+    }
+
+    .hero-section{
+        padding-top: 104px;
+        padding-bottom: 104px;
     }
 
 
@@ -749,10 +754,21 @@ footer{
     .catalog-section{
         padding: 64px 8px 0 8px;
     }
+    .category-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-yellow{
+        justify-content: center;
+    }
 
     .category .category-card img{
-        top: -48px;
-        bottom: unset;
+        width: 80%;
+        position: relative;
+        margin-top: -48px;
+        margin-bottom: 16px;
+        margin-left: -8px;
     }
 
     .card-yellow{
