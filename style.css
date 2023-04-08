@@ -24,6 +24,10 @@ a{
 section{
     background-color: #f8f8f8;
 }
+.md-screen {
+    display: none;
+}
+
 
 /********************************* header ***********************************/
 header{
@@ -122,6 +126,10 @@ header{
 }
 .nav-menu-list #nav-links a{
     color: #333333;
+}
+.nav-menu-list #nav-links a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 .nav-menu>.nav-menu-list>#nav-links:nth-child(1){
     transition: all 0.25s ease-in-out;
@@ -620,6 +628,8 @@ header{
     z-index: 100;
 }
 
+
+
 /********************************* footer-section **************************/
 footer{
     padding: 40px 8px 0;
@@ -633,6 +643,7 @@ footer{
 .footer-top{
     padding: 0 16px 40px; 
     display: flex;
+    flex-wrap: wrap;
 }
 .footer-top .brand{
     height: 100%;
@@ -755,27 +766,122 @@ footer{
         padding: 64px 8px 0 8px;
     }
     .category-card{
+        height: auto;
+        padding: 0 32px 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .category-info{
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .card-yellow{
-        justify-content: center;
+
+    .card-yellow .category-info{
+        margin: 0 0 0 0 ;
+    }
+    .card-red .category-info{
+        margin: 0 0 0 0 ;
     }
 
     .category .category-card img{
         width: 80%;
         position: relative;
+        top: 0;
         margin-top: -48px;
         margin-bottom: 16px;
         margin-left: -8px;
+    }
+
+    #category-image-2{
+        left: 10px;
+        right: unset;
+        bottom: unset;
     }
 
     .card-yellow{
         flex-direction: column;
     }
 
+    .product-list{
+        padding: 0 0;
+    }
+    .product-card{
+        padding: 8px;
+    }
+    .image-wrapper{
+        height: 76vw;
+    }
+
+    .side-block img{
+        width: 100%;
+        
+    }
+    .instagram-image{
+        width: 100%;
+  
+    }
+    .instagram-image a{
+     
+        margin: 4px;
+    }
+    
+    
+
     .footer-top{
         flex-direction: column;
     }
+}
+
+@media only screen and (min-width:992px){
+    .lg-screen{
+        display: none;
+    }
+    .nav-top{
+        padding: 0 24px;
+
+    }
+    .nav-top-info{
+        padding: 0 15px;
+    }
+    .nav-top-social{
+        padding: 0 12px;
+    }
+
+    .nav-main{
+        height: 72px;
+        padding: 0 24px;
+    }
+    .nav-main-logo{
+        padding: 0 15px;
+    }
+    .nav-menu{
+        
+        justify-content: space-between;
+    }
+
+    .nav-menu-list{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 0 24px;
+        
+        top: unset;
+        left: unset;
+        visibility: visible;
+        
+    }
+
+    .nav-menu-list #nav-links{
+        padding: 12px 18px;
+        left: 0;
+        border-top: unset;
+    }
+
+
+
 }
